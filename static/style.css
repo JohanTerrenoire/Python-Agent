@@ -1,0 +1,54 @@
+body
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: sans-serif;
+}
+a, h1, h2, legend
+{
+  color: #377ba8;
+}
+h1, h2, legend
+{
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+h1, legend
+{
+  border-bottom: 2px solid #eee;
+}
+h2
+{
+  font-size: 1.2em;
+}
+fieldset
+{
+  border-radius: 3px;
+}
+.date
+{
+  width: 25%;
+  float: right;
+  font-size: 15px;
+  font-style: italic;
+}
+.graphiques
+{
+    width:100%;
+    text-align:center;
+}
+
+#ram_usage {
+    float:left;
+}
+
+#cpu_usage
+{
+    display: inline-block;
+    margin:0 auto;
+}
+
+#disque_usage
+{
+    float:right;
+}

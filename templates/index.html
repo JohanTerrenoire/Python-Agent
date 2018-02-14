@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js')}}"></script>
+    <title>{{ hostname }}</title>
+  </head>
+  <body>
+    <h1>Informations du client</h1>
+    <div>
+      <fieldset>
+        <legend>Les caractéristiques</legend>
+        <ul>
+          <li>Nom de l'hôte : {{ hostname }}</li>
+          <li>OS : {{ os }}</li>
+          <li>Boot time : {{ boot_time }}</li>
+          <li>Nombre de CPU : {{ cpu_count }}</li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Les métriques</legend>
+        <ul>
+          <li>Occupation du disque : <span id="occupation_disque">{{ disque }}</span>%</li>
+          <li>Utilisation des CPU : <span id="utilisation_cpu">{{ charge_cpu }}</span>%</li>
+          <li>Utilisation de la mémoire RAM : <span id="occupation_ram">{{ memoire_ram }}</span>%</li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Les graphiques</legend>
+        <div class="graphiques">
+          <div id="ram_usage"></div>
+          <div id="disque_usage"></div>
+          <div id="cpu_usage"></div>
+        </div>
+      </fieldset>
+      <div class="date">
+        <p>Dernière mise à jour : {{ date_maj }}</p>
+      </div>
+    </div>
+  </body>
+  <footer>
+  </footer>
+</html>
