@@ -38,17 +38,20 @@ fieldset
     text-align:center;
 }
 
-#ram_usage {
+#ram_usage
+{
+    width: 32%;
     float:left;
 }
 
 #cpu_usage
 {
-    display: inline-block;
-    margin:0 auto;
+  width: 32%;
+  float:left;
 }
 
 #disque_usage
 {
-    float:right;
+  width: 32%;
+  float:left;
 }
