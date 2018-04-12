@@ -51,3 +51,8 @@ def recupere_info(hostname):
     connexion.commit()
     connexion.close()
     return "Success"
+
+@app.route("/index", methods=['GET'])
+def list_server():
+
+    return 'Liste'

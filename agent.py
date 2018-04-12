@@ -42,7 +42,7 @@ while True:
     info_machine["boot_time"] = datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%d-%m-%Y %H:%M:%S")
 
     #Envoi des données à l'api
-    r = requests.post("http://192.168.43.170:5000/api/"+nom_machine[1], data = info_machine)
+    r = requests.post("http://127.0.0.1:5000/api/"+nom_machine[1], data = info_machine)
     print (info_machine)
     time.sleep(300)
 pass
